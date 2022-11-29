@@ -1,0 +1,67 @@
+.card {
+  width: 250px;
+  height: 250px;
+  padding: 15px;
+  border: 1px solid var(--gray-dark);
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-left: 25px;
+}
+.card-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 135px;
+}
+
+.fas {
+  font-size: 52px;
+  cursor: cell;
+}
+
+.-yellow {
+  color: var(--yellow);
+  animation: spook 3s infinite;
+}
+.-yellow:hover {
+  color: var(--yellow-tint);
+}
+.-red {
+  color: var(--red);
+  animation: spook 3s infinite 950ms;
+}
+.-red:hover {
+  color: var(--red-tint);
+}
+.-white {
+  color: var(--white);
+  animation: spook 3s infinite 650ms;
+}
+.-white:hover {
+  color: var(--less-white);
+}
+.-gray {
+  color: var(--gray);
+  animation: spook 3s infinite 1.5s;
+}
+.-gray:hover {
+  color: var(--gray-dark);
+}
+
+@keyframes spook {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

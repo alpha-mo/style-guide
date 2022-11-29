@@ -1,0 +1,7 @@
+@media (max-width: 850px) {
+  .tbl-base {
+    font-size: 0.8em;
+    transform: scale(90%);
+    overflow-x: scroll;
+  }
+}

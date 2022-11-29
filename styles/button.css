@@ -1,0 +1,91 @@
+.cont-horz {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+button {
+  font-weight: 600;
+  width: fit-content;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background: var(--gray-dark);
+  color: var(--less-white);
+  padding: 5px 8px;
+  min-width: 100px;
+  cursor: pointer;
+  box-shadow: 0.1em 0.1em 0.1em var(--yellow);
+}
+
+.btn:hover {
+  border: 1px solid var(--yellow);
+  background: var(--yellow-tint);
+  color: var(--less-white);
+}
+
+.btn-ico {
+  outline: none;
+  border: 1px solid var(--yellow);
+  border-radius: 4px;
+  background-color: var(--black);
+  color: var(--yellow);
+  padding: 5px 8px;
+  min-width: 100px;
+  cursor: pointer;
+  box-shadow: 0.1em 0.1em 0.1em var(--red);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.btn-ico .fas {
+  font-size: 1.1em;
+}
+
+.btn-ico:hover {
+  border: 1px solid var(--red);
+  background: var(--yellow-tint);
+  color: var(--less-white);
+}
+
+.btn-ok {
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: var(--yellow);
+  color: var(--black);
+  padding: 5px 8px;
+  min-width: 100px;
+  cursor: pointer;
+  box-shadow: 0.1em 0.1em 0.1em var(--red);
+}
+
+.btn-ok:hover {
+  border: 1px solid var(--yellow);
+  background: var(--yellow-tint);
+  color: var(--less-white);
+}
+
+.btn-cancel {
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: var(--red);
+  color: var(--yellow);
+  padding: 5px 8px;
+  min-width: 100px;
+  cursor: pointer;
+  box-shadow: 0.1em 0.1em 0.1em var(--red);
+}
+
+.btn-cancel:hover {
+  border: 1px solid var(--red);
+  background: var(--yellow-tint);
+  color: var(--red);
+}

@@ -1,0 +1,7 @@
+@import url('./styles/side-menu.css');
+@import url('./styles/main.css');
+@import url('./styles/button.css');
+@import url('./styles/modal.css');
+
+@import url('./styles-responsive/main.css');
+@import url('./styles-responsive/side-menu.css');

@@ -1,0 +1,19 @@
+textarea {
+  background: var(--gray-dark);
+  box-shadow: 2px 2px 2px var(--yellow);
+  border-radius: 4px;
+  color: var(--less-white);
+  padding: 20px;
+  outline: none;
+  border: none;
+}
+input {
+  display: block;
+  background: var(--gray-dark);
+  box-shadow: 0 2px 2px var(--yellow);
+  border-radius: 4px;
+  color: var(--less-white);
+  padding: 5px;
+  outline: none;
+  border: none;
+}

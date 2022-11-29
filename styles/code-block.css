@@ -1,0 +1,59 @@
+.code-block {
+  width: fit-content;
+  margin: 15px 0 15px 15px;
+  padding: 15px;
+  background: var(--gray-dark);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  color: var(--less-white);
+}
+
+.code-block ttl {
+  color: chocolate;
+}
+
+.code-block ul {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.code-block value {
+  color: chocolate;
+}
+.code-block value::after {
+  color: white;
+  content: ';';
+}
+
+.code-block var {
+  color: greenyellow;
+}
+.code-block var::before {
+  color: cyan;
+  content: 'var( ';
+}
+.code-block var::after {
+  color: cyan;
+  content: ' )';
+}
+
+.code-block px {
+  color: var(--less-white);
+}
+.code-block px::after {
+  color: chocolate;
+  content: 'px';
+}
+
+.code-block imprt {
+  color: greenyellow;
+}
+.code-block imprt::before {
+  color: violet;
+  content: '@import url( ';
+}
+.code-block imprt::after {
+  color: violet;
+  content: ' );';
+}

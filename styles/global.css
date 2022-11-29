@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;0,900;1,400&display=swap');
+@import url('./code-block.css');
+@import url('../styles-responsive/code-block.css');
+
+/* Basic */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Färger */
+
+:root {
+  --yellow: #ecd06f;
+  --yellow-tint: #ecd16f33;
+
+  --red: #d14836;
+  --red-tint: #d1483633;
+
+  --white: #f6f6f6;
+  --less-white: #d6d6d6;
+  --gray: #a7a7a7;
+  --gray-dark: #333333;
+
+  --black: #040106;
+  --black-ish: #232327;
+}
+
+/* Typsnitt */
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h3,
+h4 {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 400;
+}
+
+.light-font {
+  font-weight: 300;
+}
+
+.thin-font {
+  font-weight: 100;
+}
+
+.title {
+  margin-bottom: 15px;
+  color: var(--red);
+}
+
+.title-sub {
+  color: var(--yellow);
+}
+
+.normal {
+  color: var(--less-white);
+}
+
+.indent {
+  margin-left: 15px;
+}

@@ -1,0 +1,15 @@
+.frm {
+  border: 1px solid var(--gray-dark);
+  padding: 30px;
+  width: fit-content;
+}
+
+input {
+  margin-bottom: 25px;
+}
+
+.form-btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

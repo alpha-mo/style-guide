@@ -1,0 +1,51 @@
+.lbls {
+  display: flex;
+  flex-direction: row;
+}
+.ok-lbl {
+  background: var(--yellow);
+}
+.err-lbl {
+  background: var(--red);
+}
+.issue-lbl {
+  background: var(--gray);
+}
+
+.panel {
+  display: none;
+  color: var(--less-white);
+}
+
+li {
+  margin-left: 25px;
+}
+
+label {
+  padding: 10px 20px;
+  cursor: pointer;
+  opacity: 0.6;
+  font-weight: 700;
+}
+
+label:hover {
+  opacity: 1;
+}
+
+#ok-radio:checked ~ .wrapper .lbls .ok-lbl,
+#err-radio:checked ~ .wrapper .lbls .err-lbl,
+#issue-radio:checked ~ .wrapper .lbls .issue-lbl {
+  opacity: 1;
+}
+
+#ok-radio:checked ~ .wrapper .ok-panel,
+#err-radio:checked ~ .wrapper .err-panel,
+#issue-radio:checked ~ .wrapper .issue-panel {
+  display: contents;
+}
+
+.wrapper {
+  border: 1px solid var(--gray-dark);
+  width: fit-content;
+  margin-left: 25px;
+}

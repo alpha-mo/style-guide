@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./master.css">
+    <script src="https://kit.fontawesome.com/460063d619.js" crossorigin="anonymous"></script>
+    <title>Style Guide</title>
+</head>
+
+<body>
+    <input type="radio" name="menu-item" id="headers-radio" checked style="display: none;">
+    <input type="radio" name="menu-item" id="text-radio" style="display: none;">
+    <input type="radio" name="menu-item" id="buttons-radio" style="display: none;">
+    <input type="radio" name="menu-item" id="tables-radio" style="display: none;">
+    <input type="radio" name="menu-item" id="nav-radio" style="display: none;">
+    <input type="radio" name="menu-item" id="msg-radio" style="display: none;">
+    <input type="radio" name="menu-item" id="spinner-radio" style="display: none;">
+    <input type="radio" name="menu-item" id="panels-radio" style="display: none;">
+    <input type="radio" name="menu-item" id="form-radio" style="display: none;">
+    <input type="radio" name="menu-item" id="colors-radio" style="display: none;">
+
+    <input type="checkbox" name="mob" id="mobile-menu-check" style="display: none;">
+    <label id="mobile-menu-lbl" for="mobile-menu-check"><i class="fas fa-bars"></i></label>
+
+    <div class="side-menu" onclick=hide_mobile_menu()>
+        <label id="headers-lbl" for="headers-radio"><i class="fas fa-book-reader"></i>Rubriker</label>
+        <label id="text-lbl" for="text-radio"><i class="fas fa-paragraph"></i> Flytande text</label>
+        <label id="buttons-lbl" for="buttons-radio"><i class="fas fa-play"></i> Knappar</label>
+        <label id="tables-lbl" for="tables-radio"><i class="fas fa-table"></i> Tabeller</label>
+        <label id="nav-lbl" for="nav-radio"><i class="fas fa-location-arrow"></i> Navigation</label>
+        <label id="msg-lbl" for="msg-radio"><i class="fas fa-comment-alt"></i> Meddelanden</label>
+        <label id="spinner-lbl" for="spinner-radio"><i class="fas fa-spinner"></i> Laddningsindikator</label>
+        <label id="panels-lbl" for="panels-radio"><i class="fas fa-columns"></i> Paneler</label>
+        <label id="form-lbl" for="form-radio"><i class="fab fa-wpforms"></i> Formulär</label>
+        <label id="colors-lbl" for="colors-radio"><i class="fas fa-brush"></i> Färgschema</label>
+    </div>
+    <div class="content">
+        <iframe class="headers" src="./pages/headers-page.html" frameborder="0"></iframe>
+        <iframe class="text" src="./pages/text-page.html" frameborder="0"></iframe>
+        <iframe class="buttons" src="./pages/button-page.html" frameborder="0"></iframe>
+        <iframe class="tables" src="./pages/table-page.html" frameborder="0"></iframe>
+        <iframe class="navigation" src="./pages/nav-page.html" frameborder="0"></iframe>
+        <div class="massage-panel">
+            <h2 class="title" style="margin-bottom: 15px;">Meddelanden:</h2>
+            <input type="checkbox" id="show-msg" style="display: none;">
+            <label id="show-msg-btn" class="btn-ico title-sub" for="show-msg">Testa visa ett meddelande</label>
+            <div class="modal">
+                <div class="modal-content">
+                    <p class="normal">Test meddelande</p>
+                    <div class="modal-btn">
+                        <label for="show-msg" class="btn-ok" style="text-align: center;"> Close</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <iframe class="spinner" src="./pages/spinner.html" frameborder="0"></iframe>
+        <iframe class="panels" src="./pages/panels.html" frameborder="0"></iframe>
+        <iframe class="form" src="./pages/form.html" frameborder="0"></iframe>
+        <iframe class="colors" src="./pages/colors.html" frameborder="0"></iframe>
+    </div>
+    <script>
+        const hide_mobile_menu = () => {
+            const hide_radio = document.getElementById("mobile-menu-check");
+            hide_radio.checked = !hide_radio.checked;
+        }
+    </script>
+</body>
+
+</html>

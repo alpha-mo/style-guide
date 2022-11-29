@@ -1,0 +1,39 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--black);
+}
+
+#show-msg-btn {
+  width: fit-content;
+}
+
+#show-msg:checked ~ .modal {
+  display: block;
+}
+
+.modal-content p {
+  max-width: 50pc;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  padding: 50px;
+  margin: 20px auto;
+  border: 2px solid var(--gray-dark);
+}
+
+.modal-btn {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}

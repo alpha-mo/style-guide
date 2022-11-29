@@ -1,0 +1,32 @@
+.loading {
+  width: 200px;
+  height: 10px;
+  outline: 1px solid var(--less-white);
+  outline-offset: 4px;
+  border-radius: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+.loading::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  background: var(--yellow);
+  animation: loader 3s infinite ease-in-out;
+}
+
+@keyframes loader {
+  0% {
+    left: -120%;
+  }
+  50% {
+    left: 120%;
+  }
+  100% {
+    left: -120%;
+  }
+}

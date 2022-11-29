@@ -1,0 +1,83 @@
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+  height: 100%;
+  padding: 20px;
+}
+
+.side-menu label {
+  width: 100%;
+  padding: 10px;
+  color: var(--gray);
+  border-bottom: 1px solid var(--gray-dark);
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.side-menu label::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 0%;
+  height: 2px;
+  transition: all 250ms ease;
+  background: var(--yellow);
+}
+
+.side-menu label:hover:after {
+  width: 100%;
+}
+
+.side-menu label:hover,
+#headers-radio:checked ~ .side-menu #headers-lbl,
+#text-radio:checked ~ .side-menu #text-lbl,
+#buttons-radio:checked ~ .side-menu #buttons-lbl,
+#tables-radio:checked ~ .side-menu #tables-lbl,
+#nav-radio:checked ~ .side-menu #nav-lbl,
+#msg-radio:checked ~ .side-menu #msg-lbl,
+#spinner-radio:checked ~ .side-menu #spinner-lbl,
+#panels-radio:checked ~ .side-menu #panels-lbl,
+#form-radio:checked ~ .side-menu #form-lbl,
+#colors-radio:checked ~ .side-menu #colors-lbl {
+  color: var(--yellow);
+  background: var(--yellow-tint);
+}
+
+.side-menu label .fas,
+.side-menu label .fab {
+  transition: all 250ms ease;
+}
+.side-menu label:hover .fas,
+.side-menu label:hover .fab {
+  color: var(--red);
+  animation: pop 250ms ease-in forwards;
+}
+
+.side-menu .home {
+  font-size: 1.5em;
+  margin: 0 auto;
+}
+
+.fas,
+.fab {
+  font-size: 0.85em;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,10 @@
+@media (max-width: 850px) {
+  .menu-horz {
+    font-size: 3vw;
+    padding: 0;
+    width: 95%;
+  }
+  .menu-horz .list {
+    gap: 0;
+  }
+}

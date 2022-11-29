@@ -1,0 +1,26 @@
+@media (max-width: 850px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    border: none;
+    display: block;
+    padding: 20px;
+    background: var(--black);
+    overflow-y: auto;
+    position: relative;
+  }
+  .fas {
+    color: var(--white);
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+  }
+  #mobile-menu-check:checked ~ .side-menu {
+    left: 0;
+  }
+
+  #mobile-menu-check:checked ~ #mobile-menu-lbl .fas {
+    color: var(--red);
+    transform: rotate(90deg);
+  }
+}
